@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class EntryModel {
     private String name;
-    private int key;
+    private Integer key;
 
     public EntryModel(String name, int key) {
         this.name = name;

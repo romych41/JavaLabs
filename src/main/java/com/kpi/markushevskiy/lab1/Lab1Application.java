@@ -10,9 +10,6 @@ public class Lab1Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Lab1Application.class, args);
-		CouchbaseCluster cluster = CouchbaseCluster.create("127.0.0.1");
-		cluster.authenticate("Administrator", "postgres");
-		cluster.openBucket("entries");
 	}
 
 }

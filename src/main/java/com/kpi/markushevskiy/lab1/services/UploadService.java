@@ -20,7 +20,7 @@ public class UploadService {
     @Autowired
     private UploadDao uploadDao;
 
-    public void addEntries(List<EntryModel> entries) throws Exception{
+    public void addEntries(List<EntryModel> entries) {
         Executor executor = Executors.newSingleThreadExecutor();
         Scheduler scheduler = Schedulers.from(executor);
         Observable.range(0, entries.size())
