@@ -1,7 +1,5 @@
 package com.kpi.markushevskiy.lab1;
 
-import com.couchbase.client.java.document.json.JsonObject;
-import com.kpi.markushevskiy.lab1.dao.DownloadDao;
 import com.kpi.markushevskiy.lab1.model.EntryModel;
 import com.kpi.markushevskiy.lab1.services.DownloadService;
 import org.junit.jupiter.api.Test;
@@ -20,5 +18,12 @@ public class DownloadServiceTest {
     public void testGetAllEntriesWithRXJava(){
         List<EntryModel> result = downloadService.getAllEntriesWithRXJava();
         int a=1;
+    }
+
+    @Test
+    public void testGetAllEntriesWithFuture() throws Exception {
+        List<EntryModel> result = downloadService.getAllEntriesWithFuture();
+        int a = 1;
+
     }
 }
